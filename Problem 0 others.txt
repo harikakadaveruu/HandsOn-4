@@ -1,0 +1,14 @@
+Problem 0:
+2.
+The time complexity of this implementation is exponential, specifically O(2^n), because we perform two recursive calls for each Fibonacci number we calculate. This means that the running time of the function doubles with each increase in the input value.
+
+3.
+Ways to Improve the Implementation:
+
+To make the algorithm work better, you can remember past results with something called memoization. This means keeping track of already done calculations so you don't have to do them again. This technique can significantly reduce the number of recursive calls and improve the time complexity to linear, O(n).
+
+Use loop method: Calculate Fibonacci numbers not by recursion but through iteration. This way, no need for many function calls and it uses less memory because you just keep the last two numbers of Fibonacci series each step.
+
+Dynamic Programming: To solve Fibonacci sequence in a good way, we use dynamic programming. We start with simple known values and then step by step find out new Fibonacci numbers. This stops us from repeating the same work many times and makes the program run faster in a straight line time order.
+
+Overall, the recursive method is easy to understand but it has a problem because it takes too much time when n gets bigger. If we use memoization, doing steps one by one, or dynamic programming methods instead, they can solve problems faster and in less time.
