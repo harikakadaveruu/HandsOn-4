@@ -1,0 +1,19 @@
+Problem 0:
+
+When we call fib(5), the function calls are as follows:
+
+fib(5) calls -> fib(4),fib(3)
+
+fib(4) calls -> fib(3),fib(2)
+
+fib(3) calls -> fib(2),fib(1)
+
+fib(3) calls -> fib(2),fib(1) again (because it's called twice in fib(4))
+
+fib(2) calls -> fib(1),fib(0)
+
+fib(2) calls -> fib(1),fib(0) again (because it's called twice in fib(3))
+
+The structure of function calls is similar to a binary tree, where each layer signifies a recursive call. The tree's depth matches the number n, and every node in this tree stands for an invocation of the fib function carrying a specific argument.
+
+To make the process better, we can think about using a technique where we save the outcomes of previous steps. This way, when similar operations need to happen again, we do not repeat the whole calculation but use saved results. This can make the performance better for the Fibonacci function, really for big numbers of n, by making less recursive calls and reducing how much time the algorithm takes.
